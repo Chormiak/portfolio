@@ -1,0 +1,19 @@
+/* FiraMono */
+
+@font-face {
+  font-family: "firaMono";
+  src: url(firaMono/FiraMono-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "firaMono";
+  src: url(firaMono/FiraMono-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "firaMono";
+  src: url(firaMono/FiraMono-Bold.ttf);
+  font-weight: 700;
+}
