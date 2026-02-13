@@ -1,2 +1,15 @@
 @import "./reset.css";
 @import "../fonts/fonts.css";
+
+:root {
+  --main-background-color: #000000;
+  --main-general-color-clear: #ffffff;
+  --main-general-color-dark: #00ff00;
+}
+
+body {
+  background-color: var(--main-background-color);
+  color: var(--main-general-color-clear);
+  font-family: "firaMono";
+  /* font-size: clamp(1rem, 1vw, 1rem); */
+}
