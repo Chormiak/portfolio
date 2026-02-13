@@ -7,9 +7,44 @@
   --main-general-color-dark: #00ff00;
 }
 
+html {
+  font-family: "firaMono";
+  font-size: clamp(14px, 1.2vw, 16px);
+  color: var(--main-general-color-clear);
+  line-height: 1.25rem;
+}
+
 body {
   background-color: var(--main-background-color);
-  color: var(--main-general-color-clear);
-  font-family: "firaMono";
-  /* font-size: clamp(1rem, 1vw, 1rem); */
+}
+
+.app {
+  height: calc(100vh - 1vw);
+  margin: 0 1vw 1vw 1vw;
+}
+
+header {
+  position: relative;
+  background-color: var(--main-general-color-clear);
+  color: var(--main-background-color);
+  z-index: 2;
+}
+
+main {
+  margin: clamp(0.6rem, 1vw, 1vw) 0;
+}
+
+.box {
+  padding-top: 1.25rem;
+  border: #ffffff 0.125vw solid;
+}
+
+.box h2 {
+  position: absolute;
+  transform: translateY(-50%);
+  background-color: var(--main-background-color);
+  margin-top: -1.25rem;
+  margin-left: 1.5vw;
+  padding: 0 0.5vw;
+  z-index: 1;
 }
