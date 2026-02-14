@@ -4,47 +4,93 @@
 :root {
   --main-background-color: #000000;
   --main-general-color-clear: #ffffff;
-  --main-general-color-dark: #00ff00;
+  --main-general-color-green: #00ff00;
 }
 
 html {
   font-family: "firaMono";
   font-size: clamp(14px, 1.2vw, 16px);
   color: var(--main-general-color-clear);
-  line-height: 1.25rem;
 }
 
 body {
-  background-color: var(--main-background-color);
+  line-height: 1.25rem;
 }
 
 .app {
-  height: calc(100vh - 1vw);
-  margin: 0 1vw 1vw 1vw;
+  background-color: var(--main-background-color);
+  height: 100vh;
+  padding: 0 1vw;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.app.green {
+  color: var(--main-general-color-green);
+}
+.app.green button {
+  color: var(--main-general-color-green);
+}
+.app.green button span {
+  background-color: var(--main-general-color-green);
+}
+.app.green header {
+  background-color: var(--main-general-color-green);
+}
+.app.green .box {
+  border-color: var(--main-general-color-green);
+}
+.app.green .box.terminal {
+  scrollbar-color: var(--main-general-color-green) transparent;
+}
+
+button {
+  color: var(--main-general-color-clear);
+  cursor: pointer;
+}
+button span {
+  color: var(--main-background-color);
+  background-color: var(--main-general-color-clear);
 }
 
 header {
-  position: relative;
   background-color: var(--main-general-color-clear);
   color: var(--main-background-color);
-  z-index: 2;
 }
 
 main {
-  margin: clamp(0.6rem, 1vw, 1vw) 0;
+  margin: clamp(0.625rem, 1vw, 1vw) 0;
+  min-height: 0;
 }
 
 .box {
-  padding-top: 1.25rem;
-  border: #ffffff 0.125vw solid;
+  padding: 1.25rem 1.5vw 0 1.5vw;
+  border: var(--main-general-color-clear) 0.125vw solid;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  position: relative;
 }
-
 .box h2 {
   position: absolute;
   transform: translateY(-50%);
   background-color: var(--main-background-color);
   margin-top: -1.25rem;
-  margin-left: 1.5vw;
   padding: 0 0.5vw;
   z-index: 1;
+}
+.box.terminal .content {
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-color: var(--main-general-color-clear) transparent;
+  scrollbar-width: unset;
+  flex: 1 1 auto;
+  margin: -0.625rem -1vw 0 -1vw;
+  min-height: 0;
+  width: calc(100% + 2vw);
+  box-sizing: border-box;
+  font-size: clamp(13px, 1.2vw, 14px);
+}
+.box.terminal .content p & .box.terminal .content h3 {
+  margin-top: 1.25rem;
 }

@@ -12,15 +12,18 @@ const route = useRoute();
           {{ route.name }}
         </NuxtLink>
       </li>
-      <li>1.0</li>
     </ul>
   </nav>
 </template>
 <style scoped>
+nav {
+  position: relative;
+  z-index: 2;
+}
 ul {
   width: auto;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   padding: 0.2vw 1vw;
 }
 </style>

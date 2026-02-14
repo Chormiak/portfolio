@@ -1,20 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Ascii from '~/components/icons/Ascii.vue';
+</script>
 <template>
-  <section>
-    <pre>
- _       ___ _____                    ________                         _       __  
-| |     / (_) / (_)___ _____ ___     / ____/ /_  ____  _________ ___  (_)___ _/ /__
-| | /| / / / / / / __ `/ __ `__ \   / /   / __ \/ __ \/ ___/ __ `__ \/ / __ `/ //_/
-| |/ |/ / / / / / /_/ / / / / / /  / /___/ / / / /_/ / /  / / / / / / / /_/ / ,<   
-|__/|__/_/_/_/_/\__,_/_/ /_/ /_/   \____/_/ /_/\____/_/  /_/ /_/ /_/_/\__,_/_/|_|  
-    </pre>
-    <!-- <p># Quem eu sou:</p>
+  <Ascii />
+  
+  <!-- <h3># Quem eu sou:</h3>
     <p>
       Sou engenheiro frontend com especialização em acessibilidade web, focado
       em construir interfaces de usuário intuitivas e perfeitas em pixel.
     </p>
 
-    <p># Do que gosto:</p>
+    <h3># Do que gosto:</h3>
 
     <p>
       Gosto de trabalhar na interseção entre design e engenharia, onde uma ótima
@@ -24,15 +20,16 @@
       sistema de design.
     </p>
 
-    <p># O que faço no cargo:</p>
+    <h3># O que faço no cargo:</h3>
 
     <p>
       Nesse cargo, lidero esforços de acessibilidade em componentes, ferramentas
       e padrões, fazendo parceria próxima com designers e engenheiros para
       garantir que a acessibilidade faça parte da nossa arquitetura central.
     </p> -->
-  </section>
 </template>
 <style scoped>
-
+p {
+  margin-bottom: calc(1.25rem * 10);
+}
 </style>
