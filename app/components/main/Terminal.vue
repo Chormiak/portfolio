@@ -1,39 +1,11 @@
-<!-- <script setup lang="ts">
-import { onMounted, onBeforeUnmount, ref } from "vue";
+<script setup lang="ts">
 
-const terminalRef = ref<HTMLElement | null>(null);
-
-let lineHeight = 0;
-
-function onWheel(e: WheelEvent) {
-  if (!terminalRef.value) return;
-
-  e.preventDefault();
-
-  const direction = e.deltaY > 0 ? 1 : -1;
-  terminalRef.value.scrollTop += direction * lineHeight;
-}
-
-onMounted(() => {
-  if (!terminalRef.value) return
-
-  const computed = getComputedStyle(terminalRef.value)
-  lineHeight = parseFloat(computed.lineHeight)
-
-  terminalRef.value.addEventListener('wheel', onWheel, { passive: false })
-})
-
-
-onBeforeUnmount(() => {
-  terminalRef.value?.removeEventListener('wheel', onWheel)
-})
-
-</script> -->
+</script>
 
 <template>
-  <section class="box terminal">
+  <section class="box">
     <h2>terminal</h2>
-    <section ref="terminalRef" class="content">
+    <section class="terminal">
       <slot />
     </section>
   </section>

@@ -1,14 +1,22 @@
 <template>
   <section class="box">
     <h2>profile</h2>
-    <section>
-      <img src="/photo.jpg" alt="Minha foto" />
+    <section class="profile">
+      <img src="/photo.png" alt="My Photo" />
+      <ul>
+        <li>Backend Developer</li>
+        <li>Node.js · Fastify · TypeScript · MySQL · WebCrypto</li>
+        <li>Disponível para presencial</li>
+      </ul>
     </section>
   </section>
 </template>
 <style scoped>
-  img {
-    object-fit: contain;
-    width: 100%;
-  }
+.box section {
+  min-height: 0;
+}
+.box ul {
+  display: grid;
+  gap: 0.625rem;
+}
 </style>

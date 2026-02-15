@@ -21,9 +21,8 @@ nav {
   z-index: 2;
 }
 ul {
-  width: auto;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  width: auto;
   padding: 0.2vw 1vw;
 }
 </style>

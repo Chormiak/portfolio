@@ -7,6 +7,12 @@
   --main-general-color-green: #00ff00;
 }
 
+html,
+body,
+.app {
+  overflow-x: hidden;
+}
+
 html {
   font-family: "firaMono";
   font-size: clamp(14px, 1.2vw, 16px);
@@ -19,7 +25,7 @@ body {
 
 .app {
   background-color: var(--main-background-color);
-  height: 100vh;
+  height: 100dvh;
   padding: 0 1vw;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -40,7 +46,7 @@ body {
 .app.green .box {
   border-color: var(--main-general-color-green);
 }
-.app.green .box.terminal {
+.app.green .terminal {
   scrollbar-color: var(--main-general-color-green) transparent;
 }
 
@@ -57,15 +63,35 @@ header {
   background-color: var(--main-general-color-clear);
   color: var(--main-background-color);
 }
+header ul {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
 
 main {
+  display: grid;
   margin: clamp(0.625rem, 1vw, 1vw) 0;
   min-height: 0;
+  column-gap: 1vw;
+  row-gap: 0.625rem;
+}
+
+.controls {
+  display: grid;
+}
+
+.copyright {
+  font-size: clamp(13px, 1.2vw, 14px);
+}
+
+img {
+  object-fit: contain;
+  width: 100%;
 }
 
 .box {
-  padding: 1.25rem 1.5vw 0 1.5vw;
-  border: var(--main-general-color-clear) 0.125vw solid;
+  padding: 1.25rem 1.5vw 1.25rem 1.5vw;
+  border: var(--main-general-color-clear) clamp(1px, 0.5vw, 2px) solid;
   display: flex;
   flex-direction: column;
   min-height: 0;
@@ -76,21 +102,99 @@ main {
   transform: translateY(-50%);
   background-color: var(--main-background-color);
   margin-top: -1.25rem;
-  padding: 0 0.5vw;
+  padding: 0 clamp(7px, 0.5vw, 15px);
   z-index: 1;
 }
-.box.terminal .content {
+.box .navbar ul li a::before {
+  content: "[ ]";
+}
+.box .navbar ul li a.current::before {
+  content: "[*]";
+}
+.box .terminal {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-color: var(--main-general-color-clear) transparent;
   scrollbar-width: unset;
   flex: 1 1 auto;
-  margin: -0.625rem -1vw 0 -1vw;
+  margin: -0.625rem -1vw -0.625rem -1vw;
   min-height: 0;
   width: calc(100% + 2vw);
   box-sizing: border-box;
   font-size: clamp(13px, 1.2vw, 14px);
 }
-.box.terminal .content p & .box.terminal .content h3 {
+.box .terminal p {
   margin-top: 1.25rem;
+}
+.box .terminal h3 {
+  margin-top: 1.25rem;
+}
+.box .profile {
+  font-size: clamp(13px, 1.2vw, 14px);
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: clamp(16px, 1.2vw, 17px);
+  }
+
+  header ul {
+    grid-template-columns: 1fr auto;
+  }
+
+  .box .profile {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    gap: 1.5vw;
+    margin: -0.6rem 0 calc(1.5vw - 1.25rem) 0;
+  }
+  .box .profile img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .box .terminal {
+    font-size: clamp(14px, 1.2vw, 15px);
+    width: 100%;
+    margin: -0.625rem 0 -0.625rem 0;
+  }
+
+  .copyright {
+    font-size: clamp(14px, 1.2vw, 15px);
+  }
+
+  .box .navbar ul {
+    font-size: clamp(10px, 4.5vw, 20px);
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, auto);
+    grid-auto-columns: max-content;
+    row-gap: 3vw;
+    column-gap: 6vw;
+  }
+  .box .navbar ul li a::before {
+    content: "[";
+  }
+  .box .navbar ul li a::after {
+    content: "]";
+  }
+  .box .navbar ul li a.current {
+    background-color: var(--main-general-color-clear);
+    color: var(--main-background-color);
+  }
+  .box .navbar ul li a.current::before {
+    content: "[";
+  }
+
+  .app.green .box .navbar ul li a.current {
+    background-color: var(--main-general-color-green);
+  }
+
+  .controls {
+    display: none;
+  }
 }

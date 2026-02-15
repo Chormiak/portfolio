@@ -29,7 +29,6 @@ nav {
 }
 
 .controls {
-  display: grid;
   grid-auto-flow: column;
   grid-template-rows: repeat(2, auto);
   grid-auto-columns: max-content;
@@ -39,7 +38,6 @@ nav {
 }
 
 .copyright {
-  font-size: clamp(13px, 1.2vw, 14px);
   margin-top: 0.5vw;
 }
 </style>

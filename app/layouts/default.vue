@@ -17,11 +17,6 @@
 </template>
 <style scoped>
 main {
-  display: grid;
   grid-template-columns: 20% auto 20%;
-  gap: 1vw;
-}
-.box {
-  /* height: 100%; */
 }
 </style>

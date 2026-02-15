@@ -1,24 +1,18 @@
 <script setup lang="ts">
 const route = useRoute();
+
 function isCurrent(path: `/${string}`): string {
-  return route.path == path ? "*" : " ";
+  return route.path == path ? "current" : "";
 }
 </script>
 <template>
-  <section class="box">
+  <section class="box nav">
     <h2>navbar</h2>
-    <section>
+    <section class="navbar">
       <nav>
         <ul>
           <li>
-            <NuxtLink to="/"
-              ><span>[{{ isCurrent("/") }}] </span>Welcome</NuxtLink
-            >
-          </li>
-          <li>
-            <NuxtLink to="/test"
-              ><span>[{{ isCurrent("/test") }}] </span>Test</NuxtLink
-            >
+            <NuxtLink to="/" :class="isCurrent('/')">About</NuxtLink>
           </li>
         </ul>
       </nav>
@@ -26,5 +20,7 @@ function isCurrent(path: `/${string}`): string {
   </section>
 </template>
 <style scoped>
-
+ul {
+  display: grid;
+}
 </style>
