@@ -1,0 +1,22 @@
+.box {
+  padding: 1.25rem 1.5vw;
+  border: var(--main-general-color-clear) clamp(1px, 0.5vw, 2px) solid;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  position: relative;
+}
+
+.box h2 {
+  position: absolute;
+  top: 0;
+  left: 1.5vw;
+  transform: translateY(-50%);
+  background-color: var(--main-background-color);
+  padding: 0 clamp(7px, 0.5vw, 15px);
+  z-index: 1;
+}
+
+.app.green .box {
+  border-color: var(--main-general-color-green);
+}

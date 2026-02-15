@@ -1,5 +1,6 @@
 <template>
   <div class="icon">
+    <p>404</p>
     <pre class="error">
 
         :::      :::::::      ::: 
@@ -13,9 +14,16 @@
   </div>
 </template>
 <style scoped>
+p {
+  display: none;
+}
 @media (max-width: 310px) {
   .icon .error {
     display: none;
+  }
+  p {
+    display: block;
+    font-weight: bold;
   }
 }
 </style>

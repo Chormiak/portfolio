@@ -2,7 +2,8 @@
   <NuxtLayout name="terminal">
     <section>
       <IconError />
-      <p>Sobrou nada pro Betinha kkkkkkkk</p>
+      <p>resource_not_found: invalid_path</p>
+      <NuxtLink to="/">[Homepage]</NuxtLink>
     </section>
   </NuxtLayout>
 </template>
@@ -14,6 +15,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.box .terminal section a {
+  margin-top: 1.25rem;
+  background-color: var(--main-general-color-clear);
+  color: var(--main-background-color);
+}
+.app.green .box .terminal section a {
+  background-color: var(--main-general-color-green);
 }
 
 </style>

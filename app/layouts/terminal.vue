@@ -3,7 +3,7 @@
     <header>
       <Header />
     </header>
-    <main>
+    <main class="terminal-layout">
       <MainTerminal>
         <slot />
       </MainTerminal>

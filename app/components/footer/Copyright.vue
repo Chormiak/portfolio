@@ -35,10 +35,17 @@
 .copyright {
   margin-top: 0.5vw;
   margin-bottom: 1vw;
+  font-size: clamp(13px, 1.2vw, 14px);
 }
 
 .copyright li ul {
   display: flex;
   gap: clamp(10px, 1.2vw, 2vw);
+}
+
+@media (max-width: 900px) {
+  .copyright {
+    font-size: clamp(14px, 1.2vw, 15px);
+  }
 }
 </style>
