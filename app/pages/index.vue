@@ -1,6 +1,57 @@
 <script setup lang="ts">
-import Ascii from "~/components/icons/Ascii.vue";
 </script>
 <template>
-  <Ascii />
+  <IconName />
+  <ul>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+    <li>hellow</li>
+  </ul>
 </template>

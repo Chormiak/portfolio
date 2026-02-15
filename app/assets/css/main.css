@@ -81,7 +81,7 @@ main {
 }
 
 img {
-  object-fit: contain;
+  /* object-fit: contain; */
   width: 100%;
 }
 
@@ -113,19 +113,20 @@ img {
   overflow-x: hidden;
   scrollbar-color: var(--main-general-color-clear) transparent;
   scrollbar-width: unset;
-  flex: 1 1 auto;
+  /* flex: 1 1 auto; */
   margin: -0.625rem -1vw -0.625rem -1vw;
-  min-height: 0;
+  height: calc(100% + 1.5vw);
   width: calc(100% + 2vw);
-  box-sizing: border-box;
+  /* min-height: 0; */
+  /* box-sizing: border-box; */
   font-size: clamp(13px, 1.2vw, 14px);
 }
-.box .terminal p {
+/* .box .terminal p {
   margin-top: 1.25rem;
 }
 .box .terminal h3 {
   margin-top: 1.25rem;
-}
+} */
 .box .profile {
   font-size: clamp(13px, 1.2vw, 14px);
 }
@@ -140,11 +141,11 @@ img {
   }
 
   .box .profile {
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-items: flex-start;
-    width: 100%;
-    height: auto;
+    /* width: 100%; */
+    /* height: auto; */
     gap: 1.5vw;
     margin: -0.6rem 0 calc(1.5vw - 1.25rem) 0;
   }
@@ -157,7 +158,7 @@ img {
 
   .box .terminal {
     font-size: clamp(14px, 1.2vw, 15px);
-    width: 100%;
+    height: calc(100% + 1.25rem);
     margin: -0.625rem 0 -0.625rem 0;
   }
 
