@@ -76,10 +76,6 @@ main {
   row-gap: 0.625rem;
 }
 
-.controls {
-  display: grid;
-}
-
 .copyright {
   font-size: clamp(13px, 1.2vw, 14px);
 }
@@ -90,7 +86,7 @@ img {
 }
 
 .box {
-  padding: 1.25rem 1.5vw 1.25rem 1.5vw;
+  padding: 1.25rem 1.5vw;
   border: var(--main-general-color-clear) clamp(1px, 0.5vw, 2px) solid;
   display: flex;
   flex-direction: column;
@@ -99,17 +95,18 @@ img {
 }
 .box h2 {
   position: absolute;
+  top: 0;
+  left: 1.5vw; 
   transform: translateY(-50%);
   background-color: var(--main-background-color);
-  margin-top: -1.25rem;
   padding: 0 clamp(7px, 0.5vw, 15px);
   z-index: 1;
 }
 .box .navbar ul li a::before {
-  content: "[ ]";
+  content: "[ ] ";
 }
 .box .navbar ul li a.current::before {
-  content: "[*]";
+  content: "[*] ";
 }
 .box .terminal {
   overflow-y: auto;
@@ -192,9 +189,5 @@ img {
 
   .app.green .box .navbar ul li a.current {
     background-color: var(--main-general-color-green);
-  }
-
-  .controls {
-    display: none;
   }
 }

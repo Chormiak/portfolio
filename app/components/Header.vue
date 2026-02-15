@@ -9,7 +9,7 @@ const route = useRoute();
       </li>
       <li>
         <NuxtLink v-if="route.path !== '/'" :to="route.path">
-          {{ route.name }}
+          {{ route.name ? route.name : 404 }}
         </NuxtLink>
       </li>
     </ul>

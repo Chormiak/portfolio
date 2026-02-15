@@ -11,7 +11,8 @@
       <MainProfile />
     </main>
     <footer>
-      <Footer />
+      <FooterControls />
+      <FooterCopyright />
     </footer>
   </div>
 </template>

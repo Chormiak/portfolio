@@ -11,12 +11,12 @@
       <MainNav />
     </main>
     <footer>
-      <Footer />
+      <FooterCopyright />
     </footer>
   </div>
 </template>
 <style scoped>
 main {
-  grid-template-rows: auto 55% auto;
+  grid-template-rows: 20% 55% auto;
 }
 </style>
