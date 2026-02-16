@@ -1,12 +1,16 @@
 <template>
   <section class="box">
     <h2>profile</h2>
-    <section class="profile">
+    <section>
       <img src="/photo.png" alt="My Photo" />
       <ul>
+        <!-- transformar essas li em NuxtLink até determinado conteúdo -->
         <li>Backend Developer</li>
+        <!-- o que eu faço -->
         <li>Node.js · Fastify · TypeScript · MySQL · WebCrypto</li>
+        <!-- minhas tecnológias -->
         <li>Disponível para presencial</li>
+        <!-- Por que quero presencial? Trabalho em equipe -->
       </ul>
     </section>
   </section>
@@ -35,7 +39,7 @@
   min-height: 0;
 }
 
-.profile {
+.box section {
   font-size: clamp(13px, 1.2vw, 14px);
 }
 
@@ -45,14 +49,14 @@
 }
 
 @media (max-width: 900px) {
-  .profile {
+  .box section {
     display: flex;
     align-items: flex-start;
     gap: 1.5vw;
     margin: -0.6rem 0 calc(1.5vw - 1.25rem) 0;
   }
 
-  .profile img {
+  .box section img {
     width: auto;
     height: auto;
     max-width: 100%;

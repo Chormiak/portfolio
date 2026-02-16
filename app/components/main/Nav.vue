@@ -6,9 +6,9 @@ function isCurrent(path: `/${string}`): string {
 }
 </script>
 <template>
-  <section class="box nav">
+  <section class="box">
     <h2>navbar</h2>
-    <section class="navbar">
+    <section>
       <nav>
         <ul>
           <li>
@@ -46,16 +46,16 @@ ul {
   display: grid;
 }
 
-.navbar ul li a::before {
+section ul li a::before {
   content: "[ ] ";
 }
 
-.navbar ul li a.current::before {
+section ul li a.current::before {
   content: "[*] ";
 }
 
 @media (max-width: 900px) {
-  .navbar ul {
+  section ul {
     font-size: clamp(10px, 4.5vw, 20px);
     grid-auto-flow: column;
     grid-template-rows: repeat(3, auto);
@@ -64,24 +64,24 @@ ul {
     column-gap: 6vw;
   }
 
-  .navbar ul li a::before {
+  section ul li a::before {
     content: "[";
   }
 
-  .navbar ul li a::after {
+  section ul li a::after {
     content: "]";
   }
 
-  .navbar ul li a.current {
+  section ul li a.current {
     background-color: var(--main-general-color-clear);
     color: var(--main-background-color);
   }
 
-  .navbar ul li a.current::before {
+  section ul li a.current::before {
     content: "[";
   }
 
-  .app.green .navbar ul li a.current {
+  .app.green section ul li a.current {
     background-color: var(--main-general-color-green);
   }
 }
