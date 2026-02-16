@@ -8,7 +8,7 @@
   </NuxtLayout>
 </template>
 <style scoped>
-.box .terminal section {
+.box .content section {
   display: flex;
   width: 100%;
   height: 100%;
@@ -17,12 +17,12 @@
   justify-content: center;
 }
 
-.box .terminal section a {
+.box .content section a {
   margin-top: 1.25rem;
   background-color: var(--main-general-color-clear);
   color: var(--main-background-color);
 }
-.app.green .box .terminal section a {
+.app.green .box .content section a {
   background-color: var(--main-general-color-green);
 }
 
