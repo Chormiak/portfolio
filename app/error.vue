@@ -1,5 +1,8 @@
+<script setup lang="ts">
+
+</script>
 <template>
-  <NuxtLayout name="terminal">
+  <NuxtLayout name="minimal">
     <section>
       <IconError />
       <p>resource_not_found: invalid_path</p>
@@ -25,5 +28,4 @@
 .app.green .box .content section a {
   background-color: var(--main-general-color-green);
 }
-
 </style>

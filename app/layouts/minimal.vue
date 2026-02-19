@@ -1,24 +1,22 @@
 <template>
   <div class="app">
-    <header>
-      <Header />
-    </header>
     <main class="terminal-layout">
       <MainTerminal>
         <slot />
       </MainTerminal>
     </main>
-    <footer>
-      <FooterCopyright />
-    </footer>
   </div>
 </template>
 <style scoped>
-.copyright {
-  padding-top: 2.5rem;
+.app {
+  grid-template-rows: 1fr;
 }
 
 @media (min-width: 901px) {
+  main {
+    padding-top: calc(0.4vw + 1.25rem);
+    padding-bottom: calc(5rem + 1.5vw);
+  }
   main {
     grid-template-columns: 1fr minmax(0, 60%) 1fr;
   }
@@ -30,8 +28,12 @@
   }
 }
 @media (max-width: 900px) {
+  /* main {
+    padding-top: 0.625rem;
+    padding-bottom: calc(6vw + 0.625rem);
+  } */
   main {
-    grid-template-rows: 20% minmax(0, 55%) 1fr;
+    grid-template-rows: 20% minmax(0, 55%) auto;
   }
   main > * {
     grid-row: 2;
