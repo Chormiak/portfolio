@@ -1,27 +1,22 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 <template>
   <NuxtLayout name="minimal">
     <section>
       <IconError />
-      <p>resource_not_found: invalid_path</p>
+      <p>Recurso não encontrado: caminho inválido</p>
       <NuxtLink to="/">[Homepage]</NuxtLink>
     </section>
   </NuxtLayout>
 </template>
 <style scoped>
-.box .content section {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
+.box .content section {
+  text-align: center;
+}
+.box .content section p {
+  margin-bottom: 1.25rem;
+}
 .box .content section a {
-  margin-top: 1.25rem;
   background-color: var(--main-general-color-clear);
   color: var(--main-background-color);
 }

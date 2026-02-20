@@ -37,15 +37,12 @@ section ul li a.current::before {
 
 @media (max-width: 900px) {
   section ul {
-    margin: 0.625rem 0;
+    margin: 0.65rem 0;
     font-size: 1.1rem;
     grid-auto-flow: column;
     grid-template-rows: repeat(3, auto);
-    /* grid-auto-columns: max-content; */
     grid-template-columns: repeat(3, minmax(min-width, 1fr));
-    gap: 0.625rem;
-    /* row-gap: 0.625rem; */
-    /* column-gap: 1.25rem; */
+    gap: 0.65rem;
   }
 
   section ul li a::before {

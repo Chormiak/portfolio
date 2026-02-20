@@ -12,26 +12,16 @@
   grid-template-rows: 1fr;
 }
 
-@media (min-width: 901px) {
-  main {
-    padding-top: calc(0.4vw + 1.25rem);
-    padding-bottom: calc(5rem + 1.5vw);
-  }
-  main {
-    grid-template-columns: 1fr minmax(0, 60%) 1fr;
-  }
-  main > * {
-    grid-column: 2;
-  }
-  main .box {
-    margin: 0 1vw;
-  }
+main {
+  grid-template-columns: 20% minmax(0, 60%) 20%;
+  margin-top: 2.3rem;
+  margin-bottom: 6.3rem;
 }
+main > * {
+  grid-column: 2;
+}
+
 @media (max-width: 900px) {
-  /* main {
-    padding-top: 0.625rem;
-    padding-bottom: calc(6vw + 0.625rem);
-  } */
   main {
     grid-template-rows: 20% minmax(0, 55%) auto;
   }

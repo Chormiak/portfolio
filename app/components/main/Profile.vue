@@ -18,7 +18,7 @@
 <style scoped>
 .box ul {
   display: grid;
-  gap: 0.625rem;
+  gap: 0.65rem;
 }
 
 img {
@@ -30,7 +30,7 @@ img {
   .box section {
     line-height: 1rem;
     display: flex;
-    gap: 0.625rem;
+    gap: 0.65rem;
     align-items: stretch;
     font-size: 0.8rem;
   }

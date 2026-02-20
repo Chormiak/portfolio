@@ -33,19 +33,12 @@
   </ul>
 </template>
 <style scoped>
-ul {
-  margin-top: 0.625rem;
-  /* font-size: clamp(13px, 1.2vw, 14px); */
+.copyright {
+  margin-top: 0.65rem;
 }
 
 ul li ul {
   display: flex;
   gap: 1.25rem;
 }
-
-/* @media (max-width: 900px) {
-  .copyright {
-    font-size: clamp(14px, 1.2vw, 15px);
-  }
-} */
 </style>
