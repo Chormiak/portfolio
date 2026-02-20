@@ -23,6 +23,6 @@ nav {
 ul {
   display: grid;
   width: auto;
-  padding: 0.2vw 1vw;
+  padding: 0.2rem 0.5rem;
 }
 </style>
