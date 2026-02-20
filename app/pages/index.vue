@@ -3,55 +3,6 @@
 <template>
   <IconName />
   <ul>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
-    <li>hellow</li>
+    <li v-for="i in 200">hellow</li>
   </ul>
 </template>

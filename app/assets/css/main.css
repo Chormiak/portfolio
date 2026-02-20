@@ -8,26 +8,26 @@
   --main-general-color-green: #00ff00;
 }
 
-html,
-body,
-.app {
-  overflow-x: hidden;
-}
-
 html {
   font-family: "firaMono";
-  font-size: clamp(14px, 1.2vw, 16px);
   color: var(--main-general-color-clear);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
+  font-size: 0.95rem;
   line-height: 1.25rem;
 }
 
 .app {
   background-color: var(--main-background-color);
   height: 100dvh;
-  padding: 0 1vw;
+  padding: 0 0.625rem 0.625rem 0.625rem;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
@@ -65,21 +65,12 @@ header ul {
 
 main {
   display: grid;
-  margin: clamp(0.625rem, 1vw, 1vw) 0;
+  margin-block: 0.625rem;
   min-height: 0;
-  column-gap: 1vw;
-  row-gap: 0.625rem;
-}
-
-img {
-  width: 100%;
+  gap: 0.625rem;
 }
 
 @media (max-width: 900px) {
-  html {
-    font-size: clamp(16px, 1.2vw, 17px);
-  }
-
   header ul {
     grid-template-columns: 1fr auto;
   }

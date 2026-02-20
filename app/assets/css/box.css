@@ -1,6 +1,6 @@
 .box {
-  padding: 1.25rem 1.5vw;
-  border: var(--main-general-color-clear) clamp(1px, 0.5vw, 2px) solid;
+  padding: 1.25rem 0.8rem;
+  border: 0.125rem solid var(--main-general-color-clear);
   display: flex;
   flex-direction: column;
   min-height: 0;
@@ -10,13 +10,19 @@
 .box h2 {
   position: absolute;
   top: 0;
-  left: 1.5vw;
+  left: 1.6rem;
   transform: translateY(-50%);
   background-color: var(--main-background-color);
-  padding: 0 clamp(7px, 0.5vw, 15px);
+  padding: 0 0.6rem;
   z-index: 1;
 }
 
 .app.green .box {
   border-color: var(--main-general-color-green);
+}
+
+@media (max-width: 900px) {
+  .box {
+    padding: 0.7rem;
+  }
 }
