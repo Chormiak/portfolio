@@ -29,7 +29,17 @@
     display: none;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
+  .icon .lastname {
+    display: block;
+  }
+}
+@media (max-width: 800px) {
+  .icon .lastname {
+    display: none;
+  }
+}
+@media (max-width: 350px) {
   .icon .name {
     display: none;
   }

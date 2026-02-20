@@ -2,7 +2,6 @@
   <div class="icon">
     <p>404</p>
     <pre class="error">
-      
         :::      :::::::      ::: 
       :+:      :+:   :+:    :+:   
     +:+ +:+   +:+   +:+   +:+ +:+ 
@@ -17,7 +16,7 @@
 p {
   display: none;
 }
-@media (max-width: 310px) {
+@media (max-width: 610px) {
   .icon .error {
     display: none;
   }
