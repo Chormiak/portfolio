@@ -23,7 +23,8 @@
 }
 
 .box .content {
-  overflow: auto;
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
   scrollbar-color: var(--main-general-color-clear) transparent;
   scrollbar-width: unset;
 }
