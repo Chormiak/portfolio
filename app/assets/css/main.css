@@ -45,6 +45,15 @@ body {
   background-color: var(--main-general-color-green);
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+.nav a:hover,
+.terminal a:hover {
+  text-decoration: none;
+}
+
 button {
   color: var(--main-general-color-clear);
   cursor: pointer;
