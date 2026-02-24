@@ -36,7 +36,7 @@ main {
 @media (max-width: 900px) {
   main {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr 20%;
     grid-template-areas: "profile" "terminal" "nav";
   }
   .controls {

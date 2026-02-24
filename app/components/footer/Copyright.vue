@@ -1,5 +1,4 @@
 <template>
-  <!-- fazer after nos links's -->
   <ul class="copyright">
     <li>
       <ul>
@@ -33,10 +32,6 @@
   </ul>
 </template>
 <style scoped>
-.copyright {
-  margin-top: 0.65rem;
-}
-
 ul li ul {
   display: flex;
   gap: 1.25rem;
