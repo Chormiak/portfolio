@@ -49,8 +49,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.nav a:hover,
-.terminal a:hover {
+.nav a:hover {
   text-decoration: none;
 }
 
