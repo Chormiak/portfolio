@@ -35,7 +35,10 @@ defineProps<{
         </div>
         <p><strong>status:</strong> {{ status }}</p>
         <p>
-          <strong>repo:</strong> <a :href="repo">{{ repo }}</a>
+          <strong>repo:</strong>
+          <a :href="repo" target="_blank" rel="noopener noreferrer">{{
+            repo
+          }}</a>
         </p>
         <p>
           <strong>details:</strong>
