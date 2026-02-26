@@ -36,8 +36,9 @@ img {
   }
 
   .box section img {
-    width: 60%;
-    max-width: 10rem;
+    width: 30%;
+    min-width: 6.5rem;
+    max-width: 8.5rem;
     height: 100%;
   }
 }

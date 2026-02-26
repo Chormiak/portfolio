@@ -36,13 +36,25 @@ section ul li a.current::before {
 }
 
 @media (max-width: 900px) {
+  @media (max-width: 400px) {
+    section ul {
+      grid-template-columns: repeat(3, minmax(min-width, 1fr));
+      gap: 0.65rem;
+    }
+  }
+  @media (min-width: 451px) {
+    section ul {
+      justify-content: end;
+      grid-template-columns: 15% 15% 15%;
+      gap: 1.25rem;
+    }
+  }
   section ul {
     margin: 0.65rem 0;
     font-size: 1.1rem;
     grid-auto-flow: column;
     grid-template-rows: repeat(3, auto);
-    grid-template-columns: repeat(3, minmax(min-width, 1fr));
-    gap: 0.65rem;
+    text-align: end;
   }
 
   section ul li a::before {
