@@ -51,7 +51,7 @@ section ul li a.current::before {
   }
   section ul {
     margin: 0.65rem 0;
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     grid-auto-flow: column;
     grid-template-rows: repeat(3, auto);
     text-align: end;
