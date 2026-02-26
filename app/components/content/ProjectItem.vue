@@ -6,9 +6,9 @@ defineEmits<{
 defineProps<{
   isOpen: boolean;
   name: string;
-  problem: string;
+  about: string;
   stack: string[];
-  architecture: string[];
+  arch: string[];
   features: string[];
   status: string;
   repo: `https://github.com/${string}`;
@@ -19,15 +19,18 @@ defineProps<{
   <article>
     <header @click="$emit('toggle')">
       <h4>{{ name }}</h4>
+      <p>{{ about }}</p>
     </header>
     <Transition name="accordion">
       <section v-if="isOpen">
-        <p><strong>problem:</strong> {{ problem }}</p>
         <p><strong>stack:</strong> {{ stack.join(", ") }}</p>
-        <p><strong>architecture:</strong> {{ architecture.join(" + ") }}</p>
-        <div>
+        <p>
+          <strong>arch<span class="opcional">itecture</span>:</strong>
+          {{ arch.join(" + ") }}
+        </p>
+        <div class="features">
           <strong>features:</strong>
-          <ul class="features">
+          <ul>
             <li v-for="feature in features" :key="name + '/' + feature">
               {{ feature }}
             </li>
@@ -35,14 +38,14 @@ defineProps<{
         </div>
         <p><strong>status:</strong> {{ status }}</p>
         <p>
-          <strong>repo:</strong>
+          <strong>repo: </strong>
           <a :href="repo" target="_blank" rel="noopener noreferrer">{{
-            repo
+            `/${repo.split("/").pop()}`
           }}</a>
         </p>
         <p>
-          <strong>details:</strong>
-          <NuxtLink :to="details">{{ details }}</NuxtLink>
+          <strong>> </strong>
+          <NuxtLink :to="details">open</NuxtLink>
         </p>
       </section>
     </Transition>
@@ -50,24 +53,35 @@ defineProps<{
 </template>
 <style scoped>
 @media (min-width: 901px) {
-  .features {
+  header {
+    display: inline-flex;
+    column-gap: 1ch;
+  }
+  header p::before {
+    content: "- ";
+  }
+  .features ul {
     list-style-position: inside;
   }
 
-  .features li::marker {
-    content: "- ";
+  .features ul li::marker {
+    content: " - ";
   }
 }
 
 @media (max-width: 900px) {
+  .opcional,
   .features {
+    display: none;
+  }
+  .features ul {
     display: inline;
   }
-  .features li {
+  .features ul li {
     display: inline;
   }
 
-  .features li + li::before {
+  .features ul li + li::before {
     content: ", ";
   }
 }
