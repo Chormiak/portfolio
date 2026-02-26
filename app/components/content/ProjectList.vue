@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { projects } from "~/data/projects";
 
+// Path to project
+const path = 'projects';
+
 // Check if its are on mobile
 const isMobile = ref(false);
 
@@ -28,6 +31,7 @@ function toggle(index: string): void {
         @toggle="toggle(id)"
         :is-open="!isMobile || openId === id"
         v-bind="project"
+        :details="`/${path}/${id}`"
       />
     </li>
   </ol>

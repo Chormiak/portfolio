@@ -8,7 +8,6 @@ export const projects: {
   features: string[];
   status: string;
   repo: `https://github.com/${string}`;
-  details: `/${string}`;
 }[] = [ 
   {
     id: "nome",
@@ -19,6 +18,5 @@ export const projects: {
     features: ["auth(jwt)", "hashing"],
     status: "Em desenvolvimento",
     repo: "https://github.com/Chormiak/portfolio",
-    details: "/projects/cashflow-api",
   },
 ];
