@@ -1,27 +1,33 @@
+<script setup lang="ts">
+import { projects } from "~/data/projects";
+
+// Check if its are on mobile
+const isMobile = ref(false);
+
+onMounted(() => {
+  const media = window.matchMedia("(max-width: 900px)");
+  isMobile.value = media.matches;
+
+  media.addEventListener("change", (e) => {
+    isMobile.value = e.matches;
+  });
+});
+
+// Accordion mechanics in projects
+const openId: Ref<string | undefined> = ref();
+
+function toggle(index: string): void {
+  if (openId.value == index) return (openId.value = undefined);
+  openId.value = index;
+}
+</script>
 <template>
   <ol>
-    <li>
+    <li v-for="{ id, ...project } in projects" :key="id">
       <ContentProjectItem
-        repo="https://github.com/Chormiak/portfolio"
-        problem="Frase"
-        details="/projects/cashflow-api"
-        name="Nome"
-        :stack="['Typescript', 'Nodejs', 'Fastify']"
-        :architecture="['layered (controller/service/repository)']"
-        :features="['auth(jwt)', 'hashing']"
-        status="Em desenvolvimento"
-      />
-    </li>
-    <li>
-      <ContentProjectItem
-        repo="https://github.com/Chormiak/portfolio"
-        problem="Frase"
-        details="/projects/cashflow-api"
-        name="Nome"
-        :stack="['Typescript', 'Nodejs', 'Fastify']"
-        :architecture="['layered (controller/service/repository)']"
-        :features="['auth(jwt)', 'hashing']"
-        status="Em desenvolvimento"
+        @toggle="toggle(id)"
+        :is-open="!isMobile || openId === id"
+        v-bind="project"
       />
     </li>
   </ol>
@@ -31,7 +37,7 @@ ol {
   counter-reset: item;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  /* gap: 1.25rem; */
 }
 ol li {
   display: flex;
