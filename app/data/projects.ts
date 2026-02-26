@@ -1,14 +1,6 @@
+import { type ProjectSimple } from "@/types/ProjectResume";
 // Important: Each id must be unique and the same as the path of your project
-export const projects: {
-  id: string;
-  name: string;
-  about: string;
-  stack: string[];
-  arch: string[];
-  features: string[];
-  status: string;
-  repo: `https://github.com/${string}`;
-}[] = [
+export const projects: ProjectSimple[] = [
   {
     id: "nome",
     name: "Nome",
