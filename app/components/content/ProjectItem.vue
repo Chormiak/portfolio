@@ -11,30 +11,34 @@ defineProps<{
 }>();
 </script>
 <template>
-  <ul>
-    <li>[{{ name }}]</li>
-    <li>problem: {{ problem }}</li>
-    <li>stack: {{ stack.join(", ") }}</li>
-    <li>architecture: {{ architecture.join(" + ") }}</li>
-    <li>
-      features:
-      <ul class="features">
-        <li v-for="feature in features" :key="name + '/' + feature">
-          {{ feature }}
-        </li>
-      </ul>
-    </li>
-    <li>status: {{ status }}</li>
-    <li>
-      repo: <a :href="repo">{{ repo }}</a>
-    </li>
-    <li>
-      details: <NuxtLink :to="details">{{ details }}</NuxtLink>
-    </li>
-  </ul>
+  <article>
+    <header @click="$emit('toggle')">
+      <h4>{{ name }}</h4>
+    </header>
+    <section>
+      <p><strong>problem:</strong> {{ problem }}</p>
+      <p><strong>stack:</strong> {{ stack.join(", ") }}</p>
+      <p><strong>architecture:</strong> {{ architecture.join(" + ") }}</p>
+      <div>
+        <strong>features:</strong>
+        <ul class="features">
+          <li v-for="feature in features" :key="name + '/' + feature">
+            {{ feature }}
+          </li>
+        </ul>
+      </div>
+      <p><strong>status:</strong> {{ status }}</p>
+      <p>
+        <strong>repo:</strong> <a :href="repo">{{ repo }}</a>
+      </p>
+      <p>
+        <strong>details:</strong>
+        <NuxtLink :to="details">{{ details }}</NuxtLink>
+      </p>
+    </section>
+  </article>
 </template>
 <style scoped>
-
 @media (min-width: 901px) {
   .features {
     list-style-position: inside;
