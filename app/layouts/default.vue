@@ -1,3 +1,19 @@
+<script setup lang="ts">
+import { type LayoutState } from "@/types/LayoutState";
+
+const wasOpened = useState("wasOpened", () => false);
+const layoutState = useState<LayoutState>("layoutState", () => "default");
+
+if (!wasOpened.value && layoutState.value !== 'error') {
+  layoutState.value = "opening";
+  wasOpened.value = true;
+
+  // tempo da animação
+  setTimeout(() => {
+    layoutState.value = "default";
+  }, 1000);
+}
+</script>
 <template>
   <div class="app">
     <header>
