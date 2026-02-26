@@ -41,15 +41,20 @@ ol {
   counter-reset: item;
   display: flex;
   flex-direction: column;
-  /* gap: 1.25rem; */
+  row-gap: 1.25rem;
 }
 ol li {
   display: flex;
-  gap: 0.65rem;
+  column-gap: 0.65rem;
   counter-increment: item;
 }
 
 ol li::before {
   content: "[" counter(item) "]";
+}
+@media (max-width: 900px) {
+  ol {
+    row-gap: 0.65rem;
+  }
 }
 </style>
