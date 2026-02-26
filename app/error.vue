@@ -29,7 +29,7 @@ async function handleBack() {
   background-color: var(--main-general-color-clear);
   color: var(--main-background-color);
 }
-.app.green .box .content section button {
+.app[data-theme="green"] .box .content section button {
   background-color: var(--main-general-color-green);
 }
 </style>

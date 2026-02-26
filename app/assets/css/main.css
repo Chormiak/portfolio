@@ -32,16 +32,16 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-.app.green {
+.app[data-theme="green"] {
   color: var(--main-general-color-green);
 }
-.app.green button {
+.app[data-theme="green"] button {
   color: var(--main-general-color-green);
 }
-.app.green button span {
+.app[data-theme="green"] button span {
   background-color: var(--main-general-color-green);
 }
-.app.green header {
+.app[data-theme="green"] > header {
   background-color: var(--main-general-color-green);
 }
 

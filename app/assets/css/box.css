@@ -17,7 +17,7 @@
   z-index: 1;
 }
 
-.app.green .box {
+.app[data-theme="green"] .box {
   border-color: var(--main-general-color-green);
 }
 

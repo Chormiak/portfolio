@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { type LayoutState } from "@/types/LayoutState";
 
+// Layout state management
 const wasOpened = useState("wasOpened", () => false);
 const layoutState = useState<LayoutState>("layoutState", () => "default");
 
-if (!wasOpened.value && layoutState.value !== 'error') {
+if (!wasOpened.value && layoutState.value !== "error") {
   layoutState.value = "opening";
   wasOpened.value = true;
 
@@ -13,9 +14,16 @@ if (!wasOpened.value && layoutState.value !== 'error') {
     layoutState.value = "default";
   }, 1000);
 }
+
+// Theme control
+const theme = useState<"green" | "">("theme", () => "");
+
+const toggleTheme = () => {
+  theme.value = theme.value === "green" ? "" : "green";
+};
 </script>
 <template>
-  <div class="app">
+  <div class="app" :data-theme="theme">
     <header>
       <Header />
     </header>

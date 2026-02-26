@@ -74,7 +74,7 @@ section ul li a.current::before {
     content: "[";
   }
 
-  .app.green section ul li a.current {
+  .app[data-theme="green"] section ul li a.current {
     background-color: var(--main-general-color-green);
   }
 }
