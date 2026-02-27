@@ -23,7 +23,7 @@ const toggleTheme = () => {
 };
 </script>
 <template>
-  <div class="app" :data-theme="theme">
+  <div class="app" :data-theme="theme" :data-layout="layoutState">
     <header>
       <Header />
     </header>
@@ -55,6 +55,10 @@ main {
   grid-template-columns: 20% auto 20%;
   grid-template-rows: 1fr;
   grid-template-areas: "nav terminal profile";
+}
+
+.app[data-layout="error"] .nav, .app[data-layout="error"] .profile {
+  visibility: hidden;
 }
 
 @media (max-width: 900px) {

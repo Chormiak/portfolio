@@ -13,10 +13,10 @@
   padding-bottom: 0.3rem;
 }
 
-.terminal-layout .box h2 {
+.app[data-layout="error"] .box h2 {
   display: none;
 }
-.terminal-layout .box .content {
+.app[data-layout="error"] .box .content {
   flex: 1;
   display: grid;
   place-items: center;
