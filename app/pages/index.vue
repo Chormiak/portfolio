@@ -1,15 +1,12 @@
 <template>
   <section id="hero">
-    <IconName />
+    <!-- <IconName /> -->
     <h3>> .hero</h3>
-    <p> <!-- style="text-indent: 1ch;" -->
-      Estudante de Desenvolvimento Web, com foco em backend e arquitetura de
-      API's.
-    </p>
-    <p>
-      Estruturo aplicações em camadas bem definidas, isolando regras de
-      negócio e mantendo separação clara de responsabilidades.
-    </p>
+      <p>
+        Estudante de Desenvolvimento Web, com foco em backend e arquitetura de
+        API's. Estruturo aplicações em camadas bem definidas, isolando regras de
+        negócio e mantendo separação clara de responsabilidades.
+      </p>
   </section>
   <section id="projects">
     <h3>> .projects</h3>
@@ -20,6 +17,10 @@
 h3 {
   margin: 1.25rem 0;
   font-weight: bold;
+}
+
+p {
+  text-indent: 1ch;
 }
 </style>
 
