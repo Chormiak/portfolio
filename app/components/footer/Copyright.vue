@@ -28,7 +28,7 @@
         </li>
       </ul>
     </li>
-    <li>&copy;2026 William Chormiak - Backend Developer</li>
+    <li>&copy;2026 Chormiak. All rights reserved.</li>
   </ul>
 </template>
 <style scoped>
