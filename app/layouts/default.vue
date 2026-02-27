@@ -28,7 +28,6 @@ if (!wasOpened.value && layoutState.value !== "error") {
       <MainProfile class="profile" />
     </main>
     <footer>
-      <FooterControls />
       <FooterCopyright />
     </footer>
   </div>
@@ -59,9 +58,6 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: "profile" "terminal" "nav";
-  }
-  .controls {
-    display: none;
   }
 }
 </style>
