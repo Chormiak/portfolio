@@ -5,6 +5,7 @@ defineEmits<{
 
 defineProps<{
   isOpen: boolean;
+  isMobile: boolean;
   name: string;
   about: string;
   stack: string[];
@@ -40,12 +41,12 @@ defineProps<{
         <p>
           <strong>repo: </strong>
           <a :href="repo" target="_blank" rel="noopener noreferrer">{{
-            `/${repo.split("/").pop()}`
+            isMobile ? `/${repo.split("/").pop()}` : repo
           }}</a>
         </p>
         <p>
-          <strong>> </strong>
-          <NuxtLink :to="details">open</NuxtLink>
+          <strong>{{ isMobile ? ">" : "Details:" + " " }}</strong>
+          <NuxtLink :to="details">{{ isMobile ? "open" : details}}</NuxtLink>
         </p>
       </section>
     </Transition>

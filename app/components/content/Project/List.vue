@@ -37,6 +37,7 @@ function toggle(index: string): void {
       <ContentProjectItem
         @toggle="toggle(id)"
         :is-open="!isMobile || openId === id"
+        :is-mobile="isMobile"
         v-bind="project"
         :details="`/${path}/${id}`"
       />
