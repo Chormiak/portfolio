@@ -7,7 +7,7 @@
             href="https://github.com/Chormiak"
             target="_blank"
             rel="noopener noreferrer"
-            >Github</a
+            >github</a
           >
         </li>
         <li>
@@ -15,7 +15,7 @@
             href="https://www.linkedin.com/in/william-chormiak-54489539a/"
             target="_blank"
             rel="noopener noreferrer"
-            >LinkedIn</a
+            >linkedIn</a
           >
         </li>
         <li>
@@ -23,7 +23,7 @@
             href="mailto:william.chormi@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            >Email</a
+            >email</a
           >
         </li>
       </ul>
@@ -34,6 +34,6 @@
 <style scoped>
 ul li ul {
   display: flex;
-  gap: 1.25rem;
+  gap: 2ch;
 }
 </style>
