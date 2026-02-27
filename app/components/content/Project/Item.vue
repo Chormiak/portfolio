@@ -71,6 +71,10 @@ defineProps<{
 }
 
 @media (max-width: 900px) {
+  p { /* If more than 3 lists are used, see to apply globally */
+    padding-left: 1ch;
+    text-indent: -1ch;
+  }
   .opcional,
   .features {
     display: none;
