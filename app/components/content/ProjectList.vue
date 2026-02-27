@@ -2,7 +2,7 @@
 import { projects } from "~/data/projects";
 
 // Path to project
-const path = 'projects';
+const path = "projects";
 
 // Check if its are on mobile
 const isMobile = ref(false);
@@ -11,8 +11,15 @@ onMounted(() => {
   const media = window.matchMedia("(max-width: 900px)");
   isMobile.value = media.matches;
 
-  media.addEventListener("change", (e) => {
+  const handler = (e: MediaQueryListEvent) => {
     isMobile.value = e.matches;
+  };
+
+  isMobile.value = media.matches;
+  media.addEventListener("change", handler);
+
+  onUnmounted(() => {
+    media.removeEventListener("change", handler);
   });
 });
 
