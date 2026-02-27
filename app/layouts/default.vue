@@ -44,7 +44,7 @@ if (!wasOpened.value && layoutState.value !== "error") {
 }
 
 main {
-  grid-template-columns: 20% auto 20%;
+  grid-template-columns: minmax(8rem, 10%) 1fr 20%;
   grid-template-rows: 1fr;
   grid-template-areas: "nav terminal profile";
 }
