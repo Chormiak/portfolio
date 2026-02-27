@@ -32,19 +32,6 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-.app[data-theme="green"] {
-  color: var(--main-general-color-green);
-}
-.app[data-theme="green"] button {
-  color: var(--main-general-color-green);
-}
-.app[data-theme="green"] button span {
-  background-color: var(--main-general-color-green);
-}
-.app[data-theme="green"] > header {
-  background-color: var(--main-general-color-green);
-}
-
 a:hover {
   text-decoration: underline;
 }

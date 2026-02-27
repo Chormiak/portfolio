@@ -14,16 +14,9 @@ if (!wasOpened.value && layoutState.value !== "error") {
     layoutState.value = "default";
   }, 1000);
 }
-
-// Theme control
-const theme = useState<"green" | "">("theme", () => "");
-
-const toggleTheme = () => {
-  theme.value = theme.value === "green" ? "" : "green";
-};
 </script>
 <template>
-  <div class="app" :data-theme="theme" :data-layout="layoutState">
+  <div class="app" :data-layout="layoutState">
     <header>
       <Header />
     </header>

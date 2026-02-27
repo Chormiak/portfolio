@@ -28,8 +28,4 @@
   scrollbar-color: var(--main-general-color-clear) transparent;
   scrollbar-width: unset;
 }
-
-.app[data-theme="green"] .content {
-  scrollbar-color: var(--main-general-color-green) transparent;
-}
 </style>

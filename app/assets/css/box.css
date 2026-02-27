@@ -17,10 +17,6 @@
   z-index: 1;
 }
 
-.app[data-theme="green"] .box {
-  border-color: var(--main-general-color-green);
-}
-
 @media (max-width: 900px) {
   .box {
     padding: 0.7rem;
