@@ -31,6 +31,10 @@ section ul li a::before {
   content: "[ ] ";
 }
 
+section ul li a.current {
+  color: var(--color-accent);
+}
+
 section ul li a.current::before {
   content: "[*] ";
 }
@@ -51,7 +55,6 @@ section ul li a.current::before {
   }
   section ul {
     margin: 0.65rem 0;
-    /* font-size: 1.1rem; */
     grid-auto-flow: column;
     grid-template-rows: repeat(3, auto);
     text-align: end;
@@ -66,8 +69,8 @@ section ul li a.current::before {
   }
 
   section ul li a.current {
-    background-color: var(--main-general-color-clear);
-    color: var(--main-background-color);
+    background-color: var(--color-accent);
+    color: var(--color-bg-primary);
   }
 
   section ul li a.current::before {

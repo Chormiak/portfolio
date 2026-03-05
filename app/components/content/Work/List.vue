@@ -24,8 +24,8 @@ ul::before {
 
   background: repeating-linear-gradient(
     to bottom,
-    var(--main-general-color-clear) 0,
-    var(--main-general-color-clear) 0.95rem,
+    var(--color-border-muted) 0,
+    var(--color-border-muted) 0.95rem,
     transparent 0.95rem,
     transparent 1.25rem
   );

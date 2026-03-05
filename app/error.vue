@@ -26,7 +26,7 @@ async function handleBack() {
   margin-bottom: 1.25rem;
 }
 .box .content section button {
-  background-color: var(--main-general-color-clear);
-  color: var(--main-background-color);
+  background-color: var(--color-text-primary);
+  color: var(--color-bg-primary);
 }
 </style>

@@ -2,16 +2,17 @@
   <section class="box">
     <h2>profile</h2>
     <section>
+      <!-- deve ser aprofundamento -->
       <img src="/photo.png" alt="My Photo" />
-      <ul>
-        <!-- transformar essas li em NuxtLink até determinado conteúdo -->
+      <!-- <ul>
+        transformar essas li em NuxtLink até determinado conteúdo
         <li>Backend Developer</li>
-        <!-- o que eu faço -->
+        o que eu faço
         <li>Node.js · Fastify · TypeScript · MySQL · WebCrypto</li>
-        <!-- minhas tecnológias -->
+        minhas tecnológias
         <li>Disponível para presencial</li>
-        <!-- Por que quero presencial? Trabalho em equipe -->
-      </ul>
+        Por que quero presencial? Trabalho em equipe
+      </ul> -->
     </section>
   </section>
 </template>

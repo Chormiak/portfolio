@@ -59,6 +59,7 @@ ol li {
 
 ol li::before {
   content: "[" counter(item) "]";
+  color: var(--color-text-secondary);
 }
 @media (max-width: 900px) {
   ol {

@@ -25,7 +25,7 @@
 .box .content {
   overflow-y: scroll;
   scrollbar-gutter: stable;
-  scrollbar-color: var(--main-general-color-clear) transparent;
+  scrollbar-color: var(--color-text-secondary) transparent;
   scrollbar-width: unset;
 }
 </style>

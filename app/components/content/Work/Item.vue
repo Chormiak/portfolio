@@ -10,6 +10,7 @@
 </template>
 <style scoped>
 p {
+  color: var(--color-text-secondary);
   padding-left: 1ch;
   text-indent: -1ch;
 }
@@ -21,7 +22,7 @@ article {
 
 article h4::before {
   content: "*";
-  background-color: var(--main-background-color);
+  background-color: var(--color-bg-primary);
   left: calc(-0.65rem - 0.0625rem);
   transform: translateX(-50%);
   position: absolute;

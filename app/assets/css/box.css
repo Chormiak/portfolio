@@ -1,6 +1,6 @@
 .box {
   padding: 0.65rem;
-  border: 0.125rem solid var(--main-general-color-clear);
+  border: 0.125rem solid var(--color-border-muted);
   display: flex;
   flex-direction: column;
   min-height: 0;
@@ -8,11 +8,12 @@
 }
 
 .box h2 {
+  color: var(--color-text-secondary);
   position: absolute;
   top: 0;
   left: 1.6rem;
   transform: translateY(-50%);
-  background-color: var(--main-background-color);
+  background-color: var(--color-bg-primary);
   padding: 0 0.6rem;
   z-index: 1;
 }

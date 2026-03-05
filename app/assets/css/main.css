@@ -3,14 +3,16 @@
 @import "./box.css";
 
 :root {
-  --main-background-color: #000000;
-  --main-general-color-clear: #ffffff;
-  --main-general-color-green: #00ff00;
+  --color-bg-primary: #0d1015;
+  --color-text-primary: #E6EDF3;
+  --color-text-secondary: #8B949E;
+  --color-border-muted: #30363D;
+  --color-accent: #3FB950;
 }
 
 html {
   font-family: "firaMono";
-  color: var(--main-general-color-clear);
+  color: var(--color-text-primary);
 }
 
 *,
@@ -25,33 +27,36 @@ body {
 }
 
 .app {
-  background-color: var(--main-background-color);
+  background-color: var(--color-bg-primary);
   height: 100dvh;
   padding: 0 0.65rem 0.65rem 0.65rem;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
 
-a:hover {
+a:hover, .terminal a {
   text-decoration: underline;
+}
+
+.terminal a:hover, footer a:hover {
+  color: var(--main-featured-color);
 }
 
 .nav a:hover {
   text-decoration: none;
 }
 
-button {
-  color: var(--main-general-color-clear);
-  cursor: pointer;
+a:active {
+  opacity: 0;
 }
-button span {
-  color: var(--main-background-color);
-  background-color: var(--main-general-color-clear);
+
+button {
+  cursor: pointer;
 }
 
 .app > header {
-  background-color: var(--main-general-color-clear);
-  color: var(--main-background-color);
+  background-color: var(--color-text-secondary);
+  color: var(--color-bg-primary);
 }
 
 main {
