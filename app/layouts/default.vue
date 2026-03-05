@@ -28,7 +28,7 @@ if (!wasOpened.value && layoutState.value !== "error") {
       <MainProfile class="profile" />
     </main>
     <footer>
-      <FooterCopyright />
+      <Footer />
     </footer>
   </div>
 </template>
@@ -52,6 +52,8 @@ main {
 .app[data-layout="error"] .nav, .app[data-layout="error"] .profile {
   visibility: hidden;
 }
+
+/* Criar um media para altura minima com que o conteúdo do profile fique bom e caso não remova-o e ponha o navbar em seu lugar */
 
 @media (max-width: 900px) {
   .profile {
