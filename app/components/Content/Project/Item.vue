@@ -45,7 +45,7 @@ defineProps<{
           }}</a>
         </p>
         <p>
-          <strong>{{ isMobile ? ">" : "Details:" + " " }}</strong>
+          <strong>{{ (isMobile ? ">" : "details:") + " " }}</strong>
           <NuxtLink :to="details">{{ isMobile ? "open" : details}}</NuxtLink>
         </p>
       </section>
