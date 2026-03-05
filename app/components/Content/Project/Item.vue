@@ -60,6 +60,7 @@ defineProps<{
   }
   header p::before {
     content: "- ";
+    color: var(--color-text-secondary);
   }
   .features ul {
     list-style-position: inside;
@@ -67,6 +68,7 @@ defineProps<{
 
   .features ul li::marker {
     content: " - ";
+    color: var(--color-text-secondary);
   }
 }
 
